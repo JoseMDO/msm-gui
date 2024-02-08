@@ -2,23 +2,46 @@
   List of all directors
 </h1>
 
+<hr>
 
-<form action="">
+<form action="/insert_director" method="post">
+  <div>
+    <label for="name_box">
+      Name
+    </label>
 
-<label for="title_field">Title</label>
-<input id="title_field" type="text" name="title">
+    <input type="text" id="name_box" name="query_name">
+  </div>
 
-<label for="dob_field">Dob</label>
-<input id="dob_field" type="text" name="dob">
+  <div>
+    <label for="dob_box">
+      Dob
+    </label>
 
-<label for="bio_field">Bio</label>
-<input id="bio_field" type="text" name="bio">
+    <input type="date" id="dob_box" name="query_dob">
+  </div>
 
-<label for="image_field">Image</label>
-<input id="image_field" type="text" name="image">
+  <div>
+    <label for="bio_box">
+      Bio
+    </label>
 
+    <textarea id="bio_box" name="query_bio" rows="3"></textarea>
+  </div>
 
+  <div>
+    <label for="image_box">
+      Image
+    </label>
+
+    <input type="text" id="image_box" name="query_image">
+  </div>
+
+  <button>
+    Create director
+  </button>
 </form>
+
 
 <hr>
 
